@@ -13,6 +13,6 @@
 
 ## Week 4
 - [Social Engineering Playlist YouTube](https://youtube.com/playlist?list=PLACNKKnR9NzIQqJog2Sv5Bb8kYDFjdXTX&si=YHOc0HIwpaehGqiU)
--[Social Engineering Part 1](https://bingobaker.com/#67e9b7f4e0a33c82)
--[Social Engineering Part 2](https://bingobaker.com/#67eda9873f57607d)
+- [Social Engineering Part 1](https://bingobaker.com/#67e9b7f4e0a33c82)
+- [Social Engineering Part 2](https://bingobaker.com/#67eda9873f57607d)
 
