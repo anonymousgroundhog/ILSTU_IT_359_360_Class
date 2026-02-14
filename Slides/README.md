@@ -4,9 +4,13 @@
 - [About-Dr-Sean-Sanders.pdf](About-Dr-Sean-Sanders.pdf)
 - [Network Security](Network-Security-and-Hacking.pdf)
 
-## Week 3
-
-## Week 4
+## Week 3 and 4
+- [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
+- [GitHub](https://github.com/)
+- [GitHub Desktop](https://desktop.github.com/download/)
+- [Example GitHub Repo](https://github.com/anonymousgroundhog/Example_Repo_IT_359_And_IT_360)
+- [Social Engineering Part 1](Social-Engineering-Psychological-Principles-and-Attack-Vectors.pdf)
+- [Social Engineering Part 2](AI-and-Social-Engineering.pdf)
 
 ## Week 5
 
