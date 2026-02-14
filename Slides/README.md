@@ -14,7 +14,7 @@
 - [Social Engineering Part 1 Activity](https://bingobaker.com/#67e9b7f4e0a33c82)
 - [Social Engineering Part 2 Activity](https://bingobaker.com/#67eda9873f57607d)
 
-## Week 5
+## Week 5 and 6
 - [Sample Pentest Report](https://purplesec.us/wp-content/uploads/2019/12/Sample-Penetration-Test-Report-PurpleSec.pdf)
 - [Risk Assessment](https://www.defense.com/blog/how-to-perform-a-cyber-security-risk-assessment)
 - [NMap Options](Nmap-Options-Explained.pdf)
@@ -23,11 +23,8 @@
 - [Threat Level Calculator](https://bit-sentinel.com/common-vulnerability-scoring-system-cvss-2-0-online-calculator/)
 - [Threat Analysis](Cybersecurity-Threat-Analysis.pdf)
 
-## Week 6
+## Week 7 to 9
+- [Soot Compiler And Applicationb Analysis](Soot-Compiler-Framework-and-Android-Application-Analysis.pdf)
+- [MADScanner (GitHub)](https://github.com/anonymousgroundhog/IT_359_MADScanner/)
 
-## Week 7
-
-## Week 8
-
-## Week 9
 
