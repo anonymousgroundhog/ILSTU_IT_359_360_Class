@@ -32,3 +32,6 @@
 
 ## Week 8
 - [Chapter 5](Steganography-and-Encryption-Chapter-5.pdf)
+
+## Week 9
+- [Incident-Response-and-Disaster-Recovery](Incident-Response-and-Disaster-Recovery.pdf)
