@@ -13,8 +13,10 @@
 
 ## Week 4
 - [Social Engineering Playlist YouTube](https://youtube.com/playlist?list=PLACNKKnR9NzIQqJog2Sv5Bb8kYDFjdXTX&si=YHOc0HIwpaehGqiU)
-- [Social Engineering Part 1](https://bingobaker.com/#67e9b7f4e0a33c82)
-- [Social Engineering Part 2](https://bingobaker.com/#67eda9873f57607d)
+- [Social Engineering Part 1](Social-Engineering-Psychological-Principles-and-Attack-Vectors.pdf)
+- [Social Engineering Part 2](AI-and-Social-Engineering.pdf)
+- [Social Engineering Part 1 Activity](https://bingobaker.com/#67e9b7f4e0a33c82)
+- [Social Engineering Part 2 Activity](https://bingobaker.com/#67eda9873f57607d)
 
 ## Week 5
 - [Volatility-3-Advanced-Memory-Forensics-Framework.pdf](Volatility-3-Advanced-Memory-Forensics-Framework.pdf)
