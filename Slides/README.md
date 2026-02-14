@@ -1,9 +1,8 @@
 # Slides and content by week
 
-## Week 1
+## Week 1 and 2
 - [About-Dr-Sean-Sanders.pdf](About-Dr-Sean-Sanders.pdf)
-
-## Week 2
+- [Network Security](Network-Security-and-Hacking.pdf)
 
 ## Week 3
 
