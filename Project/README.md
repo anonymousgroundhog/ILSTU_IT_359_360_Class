@@ -13,4 +13,4 @@ Add some more additional details.
 Add some new text here.
 
 ## Project Structure
-- Look at pdf details
+- Look at pdf deliverable details
