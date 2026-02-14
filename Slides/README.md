@@ -22,6 +22,7 @@
 - [CVSS Calculator](https://bit-sentinel.com/common-vulnerability-scoring-system-cvss-2-0-online-calculator/)
 
 ## Week 6
+- [Prompt Engineering Basics](Prompt-Engineering-Basics.md)
 - [Chapter 4](Chapter4.pdf)
 - [Android Mobile Forensics](Android%20mobile%20forensics.pdf)
 - [Mobile Device Forensics: Collection and Preservation](https://www.youtube.com/watch?v=uZxb_pTAELg)
