@@ -28,4 +28,7 @@
 - [Android Studio Download](https://developer.android.com/studio)
 
 ## Week 7
+- [DFIR Report](https://www.forensicfocus.com/articles/writing-dfir-reports-a-primer/)
 
+## Week 8
+- [Chapter 5](Steganography-and-Encryption-Chapter-5.pdf)
