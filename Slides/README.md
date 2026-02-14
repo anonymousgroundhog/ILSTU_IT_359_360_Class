@@ -21,3 +21,11 @@
 - [MITRE Framework](https://mitre-attack.github.io/attack-navigator/)
 - [CVSS Calculator](https://bit-sentinel.com/common-vulnerability-scoring-system-cvss-2-0-online-calculator/)
 
+## Week 6
+- [Chapter 4](Chapter4.pdf)
+- [Android Mobile Forensics](Android mobile forensics.pdf)
+- [Mobile Device Forensics: Collection and Preservation](https://www.youtube.com/watch?v=uZxb_pTAELg)
+- [Android Studio Download](https://developer.android.com/studio)
+
+## Week 7
+
