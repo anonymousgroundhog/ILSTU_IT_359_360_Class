@@ -11,8 +11,17 @@
 - [Example GitHub Repo](https://github.com/anonymousgroundhog/Example_Repo_IT_359_And_IT_360)
 - [Social Engineering Part 1](Social-Engineering-Psychological-Principles-and-Attack-Vectors.pdf)
 - [Social Engineering Part 2](AI-and-Social-Engineering.pdf)
+- [Social Engineering Part 1 Activity](https://bingobaker.com/#67e9b7f4e0a33c82)
+- [Social Engineering Part 2 Activity](https://bingobaker.com/#67eda9873f57607d)
 
 ## Week 5
+- [Sample Pentest Report](https://purplesec.us/wp-content/uploads/2019/12/Sample-Penetration-Test-Report-PurpleSec.pdf)
+- [Risk Assessment](https://www.defense.com/blog/how-to-perform-a-cyber-security-risk-assessment)
+- [NMap Options](Nmap-Options-Explained.pdf)
+- [Risk Management](Risk-Management.pdf)
+- [MITRE Attack Framework](https://mitre-attack.github.io/attack-navigator/)
+- [Threat Level Calculator](https://bit-sentinel.com/common-vulnerability-scoring-system-cvss-2-0-online-calculator/)
+- [Threat Analysis](Cybersecurity-Threat-Analysis.pdf)
 
 ## Week 6
 
