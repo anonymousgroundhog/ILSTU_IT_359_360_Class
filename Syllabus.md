@@ -4,31 +4,22 @@
 
 ## Instructor Information
 
-* 
-**Instructor:** Dr. Sean Sanders 
+* **Instructor:** Dr. Sean Sanders 
 
 
-* 
-**Email:** spsand1@ilstu.edu 
+* **Email:** spsand1@ilstu.edu 
 
 
-* 
-**Room:** Old Union 213E 
+* **Room:** Old Union 213E 
 
 
-* 
-**Time:** (Tu/Thur) 9:35 PM - 10:50 PM 
+* **Time:** (Tu/Thur) 9:35 PM - 10:50 PM 
 
 
-* 
-**Student Support Hours:** By appointment 
+* **Student Support Hours:** By appointment 
 
 
 * Requests should be for Monday, Wednesday, or Friday from 9 AM to 5 PM.
-
-
-
-
 
 ---
 
@@ -71,28 +62,22 @@ Upon successful completion, students will be able to:
 
 * A grade of **C** or better in **IT 250** and **IT 276**.
 
-
-
 ---
 
 ## Course Requirements
 
 ### Technology & Software
 
-* 
-**Computer:** Must meet the School of IT requirements.
+* **Computer:** Must meet the School of IT requirements.
 
 
-* 
-**Network:** Reliable, fast network is required when off-campus.
+* **Network:** Reliable, fast network is required when off-campus.
 
 
-* 
-**HackTheBox:** VIP+ subscription ($25/month) is required for labs and textbook materials.
+* **HackTheBox:** VIP+ subscription ($25/month) is required for labs and textbook materials.
 
 
-* 
-**Minecraft Java Edition:** Used for educational purposes and group work (roughly $30).
+* **Minecraft Java Edition:** Used for educational purposes and group work (roughly $30).
 
 
 
@@ -113,9 +98,7 @@ The course is taught via **lecture/discussion (60%)** and **lab time (40%)**.
 | Group Presentation/Project | 30% |
 | Exams (Midterm & Final) | 40% (2 at 15% each, plus additional weighting) |
 | **Total** | **100%** |
-| 
 
- |  |
 
 ### Grading Scale
 
@@ -126,9 +109,7 @@ The course is taught via **lecture/discussion (60%)** and **lab time (40%)**.
 | **C** | 70.00 – 79.99 |
 | **D** | 60.00 – 69.99 |
 | **F** | 59.99 and below |
-| 
 
- |  |
 
 > **Important:** To pass the course, you must achieve a score of **60 or above in all assessment components**. Failure to do so results in an **F** for the course.
 > 
@@ -140,20 +121,16 @@ The course is taught via **lecture/discussion (60%)** and **lab time (40%)**.
 
 ### Attendance and Absences
 
-* 
-**1-2 unexcused absences:** No make-up of missed assignments.
+* **1-2 unexcused absences:** No make-up of missed assignments.
 
 
-* 
-**3 unexcused absences:** Letter grade reduction.
+* **3 unexcused absences:** Letter grade reduction.
 
 
-* 
-**4 or more unexcused absences:** Automatic **F** for the course.
+* **4 or more unexcused absences:** Automatic **F** for the course.
 
 
-* 
-**Excused Absences:** Limited to quarantine, death in the family, or mandatory military/jury duty. Instructor must be notified **BEFORE** the absence.
+* **Excused Absences:** Limited to quarantine, death in the family, or mandatory military/jury duty. Instructor must be notified **BEFORE** the absence.
 
 
 
@@ -167,22 +144,10 @@ Assignments must be submitted via **Canvas**. Late submissions or submissions vi
 
 | Week | Topic | Reading/Labs | Key Activities |
 | --- | --- | --- | --- |
-| **1-2** | Intro to Ethical Hacking; Footprinting; Nmap | Tier 0 & Tier 1 | Tier 0 & 1 due; Project idea due Week 2 
-
- |
-| **3** | Enumeration (FTP, SMB, etc.); Privilege Escalation | Tier 2 | Tier 2 due; Brute forcing; Exploit binary paths 
-
- |
-| **4-8** | Red Team Introduction | Intro to Red Team Track | Attack Frameworks; OSINT; Reconnaissance 
-
- |
-| **9** | Mid Term Review & Exam | N/A | <br>**Mid Term Exam (Mar. 8)** 
-
- |
-| **10-16** | Spring Break / Attack Frameworks | MITRE ATT&CK/ATLAS | Framework analysis 
-
- |
-| **17** | Student Presentations | N/A | <br>**Final Exam** 
-
- |
+| **1-2** | Intro to Ethical Hacking; Footprinting; Nmap | Tier 0 & Tier 1 | Tier 0 & 1 due; Project idea due Week 2  |
+| **3** | Enumeration (FTP, SMB, etc.); Privilege Escalation | Tier 2 | Tier 2 due; Brute forcing; Exploit binary paths  |
+| **4-8** | Red Team Introduction | Intro to Red Team Track | Attack Frameworks; OSINT; Reconnaissance |
+| **9** | Mid Term Review & Exam | N/A | <br>**Mid Term Exam (Mar. 8)**  |
+| **10-16** | Spring Break / Attack Frameworks | MITRE ATT&CK/ATLAS | Framework analysis  |
+| **17** | Student Presentations | N/A | <br>**Final Exam**  |
 
