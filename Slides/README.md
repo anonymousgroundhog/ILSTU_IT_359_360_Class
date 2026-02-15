@@ -25,6 +25,7 @@
 
 ## Week 6
 - [Prompt Engineering Basics](Prompt-Engineering-Basics.md)
+- [AI In Class Activity](../In_Class_Activity_Files/AI_Tutorial/)
 - [Chapter 4](Chapter%204.pdf)
 - [Android Mobile Forensics](Android%20mobile%20forensics.pdf)
 - [Mobile Device Forensics: Collection and Preservation](https://www.youtube.com/watch?v=uZxb_pTAELg)
