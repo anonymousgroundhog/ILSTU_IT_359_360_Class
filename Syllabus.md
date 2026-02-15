@@ -1,6 +1,16 @@
 ## IT 360 - Security Incident and Event Management and Forensics
 
-**Updated as of:** 9/17/2025 **Instructor:** Dr. Sean Sanders **E-mail:** spsand1@ilstu.edu **Student Support Hours:** By appointment; requests on Monday, Wednesday, or Friday from 9 AM to 5 PM **Time:** Tu/Thur at 12:35 p.m.–1:50 p.m. and 2 p.m.–3:15 p.m. **Room:** Julian Hall 26 
+**Updated as of:** 9/17/2025 
+
+**Instructor:** Dr. Sean Sanders 
+
+**E-mail:** spsand1@ilstu.edu 
+
+**Student Support Hours:** By appointment; requests on Monday, Wednesday, or Friday from 9 AM to 5 PM 
+
+**Time:** Tu/Thur at 12:35 p.m.–1:50 p.m. and 2 p.m.–3:15 p.m. 
+
+**Room:** Julian Hall 26 
 
 ---
 
