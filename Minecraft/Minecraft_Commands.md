@@ -127,7 +127,7 @@ The Minecraft `/fill` command is a powerful administrative command that allows y
 
 The basic structure of the command is:
 
-$$\text{/fill } x1 \text{ } y1 \text{ } z1 \text{ } x2 \text{ } y2 \text{ } z2 \text{ } \langle\text{block\_name}\rangle \text{ } [\text{options}]$$
+$` \text{/fill } x1 \text{ } y1 \text{ } z1 \text{ } x2 \text{ } y2 \text{ } z2 \text{ } \langle\text{block\_name}\rangle \text{ } [\text{options}] `$
 
 ---
 
