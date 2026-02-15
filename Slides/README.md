@@ -22,6 +22,8 @@
 - [MITRE Attack Framework](https://mitre-attack.github.io/attack-navigator/)
 - [Threat Level Calculator](https://bit-sentinel.com/common-vulnerability-scoring-system-cvss-2-0-online-calculator/)
 - [Threat Analysis](Cybersecurity-Threat-Analysis.pdf)
+- [Prompt Engineering Basics](Prompt-Engineering-Basics.md)
+- [AI In Class Activity](../In_Class_Activity_Files/AI_Tutorial/)
 
 ## Week 7 to 9
 - [Soot Compiler And Applicationb Analysis](Soot-Compiler-Framework-and-Android-Application-Analysis.pdf)
