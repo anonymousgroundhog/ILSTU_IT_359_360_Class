@@ -10,3 +10,5 @@ A repo for the IT 359 and IT 360 classes.
   - Project-related materials.
 - In_Class_Activity_Files
   - All files and details for class day activities are stored.
+- Minecraft
+  - Details related to the Minecraft server.
