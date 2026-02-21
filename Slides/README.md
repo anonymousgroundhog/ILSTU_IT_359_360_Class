@@ -32,6 +32,7 @@
 - [Android Studio Download](https://developer.android.com/studio)
 
 ## Week 7
+- [GIT Basics](git.md)
 - [DFIR Report](https://www.forensicfocus.com/articles/writing-dfir-reports-a-primer/)
 
 ## Week 8
