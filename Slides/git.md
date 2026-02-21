@@ -79,3 +79,61 @@ If it says, *"Hi username! You've successfully authenticated,"* you are official
 
 ---
 
+# Additional Git Commands
+Adding branching and navigation to your toolkit is where Git starts to feel less like a "save button" and more like a "time machine." These commands allow you to experiment safely without breaking your main project.
+
+---
+
+## 1. Managing Branches (`git branch`)
+
+Think of branches as parallel universes. You can build a new feature in one universe while keeping the "Main" universe stable.
+
+* **List branches:** `git branch` (The one with the `*` is where you are currently).
+* **Create a new branch:** `git branch feature-login`
+* **Delete a branch:** `git branch -d feature-login` (Use this once the work is merged).
+
+## 2. Navigating the Timeline (`git checkout` / `git switch`)
+
+Once you’ve created a branch, you need to actually "jump" into it.
+
+* **Switch to a branch:** `git checkout feature-login`
+> *Note: Modern Git also uses `git switch feature-login`, which is a bit more intuitive.*
+
+
+* **Shortcut (Create AND Switch):** `git checkout -b new-feature`
+This creates the branch and moves you there in one command.
+* **Discard local changes:** `git checkout -- filename`
+If you've made a mess of a file and want to revert it to the last committed version, this is your "undo" button.
+
+---
+
+## 3. Combining Work (`git merge`)
+
+When your feature is finished and tested, you’ll want to bring those changes back into your main branch.
+
+1. Switch to the target branch: `git checkout main`
+2. Pull in the changes: `git merge feature-login`
+
+## 4. Staying Up to Date (`git pull` & `git fetch`)
+
+If you are working with others (or on different machines), you need to grab their changes from the cloud.
+
+* **git fetch:** Downloads changes from GitHub but **doesn't** change your local files yet. It’s a "peek" at what’s new.
+* **git pull:** Downloads changes and immediately merges them into your current branch. It’s `fetch` + `merge` combined.
+
+---
+
+## 5. The "I Made a Mistake" Commands
+
+We’ve all been there. Here are the safety nets:
+
+| Command | What it does |
+| --- | --- |
+| `git log --oneline` | Shows a simplified history of your commits. |
+| `git diff` | Shows exactly what lines changed since your last commit. |
+| `git reset --soft HEAD~1` | Undoes your last commit but **keeps** your work in the files (great for fixing a typo in a commit message). |
+| `git stash` | Temporarily "hides" your uncommitted changes so you can switch branches without committing half-finished work. |
+| `git stash pop` | Brings your "hidden" changes back. |
+
+---
+
