@@ -26,6 +26,7 @@
 - [AI In Class Activity](../In_Class_Activity_Files/AI_Tutorial/)
 
 ## Week 7 to 9
+- [Git Commands](git.md)
 - [Soot Compiler And Applicationb Analysis](Soot-Compiler-Framework-and-Android-Application-Analysis.pdf)
 - [MADScanner (GitHub)](https://github.com/anonymousgroundhog/IT_359_MADScanner/)
 
