@@ -27,6 +27,7 @@
 
 ## Week 7 to 9
 - [Git Commands](git.md)
+- [GIT SSH Troubleshooting](https://docs.github.com/en/authentication/troubleshooting-ssh)
 - [Ruff](ruff.md)
 - [Soot Compiler And Applicationb Analysis](Soot-Compiler-Framework-and-Android-Application-Analysis.pdf)
 - [MADScanner (GitHub)](https://github.com/anonymousgroundhog/IT_359_MADScanner/)
