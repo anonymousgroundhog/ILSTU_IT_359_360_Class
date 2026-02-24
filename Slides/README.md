@@ -33,6 +33,7 @@
 
 ## Week 7
 - [GIT Basics](git.md)
+- [GIT SSH Troubleshooting](https://docs.github.com/en/authentication/troubleshooting-ssh)
 - [Ruff](ruff.md)
 - [DFIR Report](https://www.forensicfocus.com/articles/writing-dfir-reports-a-primer/)
 
