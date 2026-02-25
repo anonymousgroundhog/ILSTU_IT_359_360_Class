@@ -15,4 +15,4 @@ Add some new text here.
 
 ## Project Structure
 
-- Look at [Deliverable](Deliverable.md) file for deliverable details
+- Look at [Deliverable](Deliverables.md) file for deliverable details
