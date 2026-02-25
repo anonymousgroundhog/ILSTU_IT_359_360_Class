@@ -1,6 +1,7 @@
 # Final Project Structure
 
 ## Team Members
+
 - Member 1
 - Member 2
 
@@ -13,4 +14,5 @@ Add some more additional details.
 Add some new text here.
 
 ## Project Structure
-- Look at pdf deliverable details
+
+- Look at [Deliverable](Deliverable.md) file for deliverable details
