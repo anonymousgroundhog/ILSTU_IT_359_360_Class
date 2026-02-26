@@ -1,10 +1,12 @@
 # Slides and content by week
 
 ## Week 1 and 2
+
 - [About-Dr-Sean-Sanders.pdf](About-Dr-Sean-Sanders.pdf)
 - [Network Security](Network-Security-and-Hacking.pdf)
 
 ## Week 3 and 4
+
 - [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
 - [GitHub](https://github.com/)
 - [GitHub Desktop](https://desktop.github.com/download/)
@@ -15,6 +17,7 @@
 - [Social Engineering Part 2 Activity](https://bingobaker.com/#67eda9873f57607d)
 
 ## Week 5 and 6
+
 - [Sample Pentest Report](https://purplesec.us/wp-content/uploads/2019/12/Sample-Penetration-Test-Report-PurpleSec.pdf)
 - [Risk Assessment](https://www.defense.com/blog/how-to-perform-a-cyber-security-risk-assessment)
 - [NMap Options](Nmap-Options-Explained.pdf)
@@ -26,11 +29,10 @@
 - [AI In Class Activity](../In_Class_Activity_Files/AI_Tutorial/)
 
 ## Week 7 to 9
+
 - [Git Commands](git.md)
 - [GIT SSH Troubleshooting](https://docs.github.com/en/authentication/troubleshooting-ssh)
 - [Ruff](ruff.md)
 - [GitHub Pages](https://docs.github.com/en/pages/quickstart)
 - [Soot Compiler And Applicationb Analysis](Soot-Compiler-Framework-and-Android-Application-Analysis.pdf)
 - [MADScanner (GitHub)](https://github.com/anonymousgroundhog/IT_359_MADScanner/)
-
-
