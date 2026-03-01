@@ -13,3 +13,4 @@ wget https://downloads.volatilityfoundation.org/volatility3/symbols/windows.zip
 unzip windows.zip
 wget https://downloads.volatilityfoundation.org/volatility3/symbols/linux.zip
 unzip linux.zip
+cd ../
