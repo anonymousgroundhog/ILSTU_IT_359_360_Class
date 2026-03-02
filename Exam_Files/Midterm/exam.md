@@ -1,6 +1,6 @@
 # class-it359-spring-2026-midterm
+#class #it359
 
-# class #it359
 
 ## Description
 
@@ -17,16 +17,16 @@ You will submit a pen-test report, which will be graded based on the following c
 
 ### 1. Executive Summary (20 points)
 
-* **Overview**: 3 points
+* **Overview**: 3 points 
 
-* **High-level test outcomes**: 3 points
+* **High-level test outcomes**: 3 points 
 
-* **Overall risk rating**: 10 points
+* **Overall risk rating**: 10 points 
   * If the exploits you choose have a CVSS score, report these scores.
   * If the CVSS score is not available, use a CVSS calculator to determine the score.
   * Report CVSS vector strings in the appendix.
 
-* **Recommendations**: 4 points
+* **Recommendations**: 4 points 
 
 ### 2. Test Scope and Method (20 points)
 
@@ -35,7 +35,7 @@ You will submit a pen-test report, which will be graded based on the following c
 
 ### 3. Internal Phase (60 points)
 
-* **Phase summary**: 20 points
+* **Phase summary**: 20 points 
 * **Actions taken**: 20 points — include screenshots of successful flag acquisition.
 * **Grading**: 40 points if both boxes owned; 20 points if one box owned; 0 points if the attack failed.
 
@@ -43,17 +43,23 @@ You will submit a pen-test report, which will be graded based on the following c
 
 * Write "**Not Applicable**".
 
+
 ### 5. Conclusions (20 points)
 
-* **Most likely compromise scenarios**: 10 points
-* **Implications**: 10 points
+* **Most likely compromise scenarios**: 10 points 
+* **Implications**: 10 points 
+
+
 
 ### 6. References
 
 * List and provide links to the resources you used.
+
+
 
 ### 7. Appendix
 
 * Screenshots and other supplementary materials, if any.
 
 ---
+
