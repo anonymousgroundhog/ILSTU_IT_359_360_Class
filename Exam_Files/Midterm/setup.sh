@@ -7,3 +7,4 @@ mkdir volatility3_env
 cd volatility3_env
 python3 -m venv venv
 source venv/bin/activate
+pip install volatility3
