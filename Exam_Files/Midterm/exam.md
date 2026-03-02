@@ -7,13 +7,14 @@
 You will identify **three boxes** on Hack The Box CTF Tryout.  You will plan your exploitation, execute it, and produce a pen-test report based on the template shared in class.
 
 * **Box Selection**: You cannot select boxes that are easy difficulty
-* **Important Info**: When you sign up for HTB CTF you will want to use the naming convention: ISU_**[YOUR NAME]**
+  - Only select 3 challenges
+* **Important Info**: When you sign up for HTB CTF you will want to use the naming convention: ISU_**[YOUR NAME]
 
 ---
 
 ## Deliverable and Grading (100 pts Total)
 
-You will submit a pen-test report, which will be graded based on the following criteria:
+You will submit a pen-test report for all 3 challenges, which will be graded based on the following criteria:
 
 ### 1. Executive Summary (20 points)
 
