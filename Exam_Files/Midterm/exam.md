@@ -4,7 +4,7 @@
 
 ## Description
 
-You will identify **three boxes** on Hack The Box CTF Tryout.  You will plan your exploitation, execute it, and produce a pen-test report based on the template shared in class.
+You will identify **three boxes** on [Hack The Box CTF Tryout](https://ctf.hackthebox.com/event/1434).  You will plan your exploitation, execute it, and produce a pen-test report based on the template shared in class.
 
 * **Box Selection**: You cannot select boxes that are easy difficulty
   - Only select 3 challenges
