@@ -1,16 +1,9 @@
 #!/bin/bash
 
-git clone https://github.com/volatilityfoundation/volatility3.git
-cd volatility3/
-sudo apt install python3
-sudo apt install python3-pip
-sudo apt update --fix-missing
-sudo apt install python3.12-venv
-python3 -m venv venv && . venv/bin/activate
-pip install -e ".[dev]"
-cd volatility3/symbols
-wget https://downloads.volatilityfoundation.org/volatility3/symbols/windows.zip
-unzip windows.zip
-wget https://downloads.volatilityfoundation.org/volatility3/symbols/linux.zip
-unzip linux.zip
-cd ../
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y python3 python3-dev libpython3-dev python3-pip python3-venv git build-essential libdistorm3-dev yara libraw1394-11 libcapstone-dev capstone-tool tzdata
+
+mkdir volatility3_env
+cd volatility3_env
+python3 -m venv venv
+source venv/bin/activate
