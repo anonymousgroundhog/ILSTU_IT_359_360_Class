@@ -12,7 +12,7 @@ You will identify **three boxes** on [Hack The Box CTF Tryout](https://ctf.hackt
 
 ---
 
-## Deliverable and Grading (100 pts Total)
+## Deliverable and Grading (120 pts Total)
 
 You will submit a pen-test report for all 3 challenges, which will be graded based on the following criteria:
 
