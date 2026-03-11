@@ -43,9 +43,10 @@ sudo apt install python3-pip
 sudo apt install python3-lz4
 sudo apt install python3-xxhash
 
+sudo apt install git
 git clone git@github.com:jakev/pyxamstore.git
 cd pyxamstore
-python setup.py install
+sudo python3 setup.py install
 ```
 
 # APKPure
