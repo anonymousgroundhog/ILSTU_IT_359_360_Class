@@ -44,7 +44,19 @@ sudo apt install python3-lz4
 sudo apt install python3-xxhash
 
 sudo apt install git
-git clone git@github.com:jakev/pyxamstore.git
+git clone https://github.com/jakev/pyxamstore.git
+```
+
+```shell
+# Install the venv module if you don't have it
+sudo apt update && sudo apt install python3-venv
+
+# Create and activate the environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install the package
+pip install .
 ```
 
 # APKPure
