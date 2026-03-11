@@ -48,6 +48,7 @@ git clone https://github.com/jakev/pyxamstore.git
 ```
 
 ```shell
+cd pyxamstore
 # Install the venv module if you don't have it
 sudo apt update && sudo apt install python3-venv
 
