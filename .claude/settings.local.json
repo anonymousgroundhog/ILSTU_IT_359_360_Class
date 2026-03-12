@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x /home/sean/Documents/Projects/ILSTU_IT_359_360_Class/In_Class_Activity_Files/ghidra/setup.sh)"
+    ]
+  }
+}
