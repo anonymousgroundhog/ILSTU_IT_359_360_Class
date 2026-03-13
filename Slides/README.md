@@ -34,5 +34,4 @@
 - [GIT SSH Troubleshooting](https://docs.github.com/en/authentication/troubleshooting-ssh)
 - [Ruff](ruff.md)
 - [GitHub Pages](https://docs.github.com/en/pages/quickstart)
-- [Soot Compiler And Applicationb Analysis](Soot-Compiler-Framework-and-Android-Application-Analysis.pdf)
-- [MADScanner (GitHub)](https://github.com/anonymousgroundhog/IT_359_MADScanner/)
+- [ghidra in class activity](../In_Class_Activity_Files/)
