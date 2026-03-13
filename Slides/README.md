@@ -52,3 +52,7 @@
 ## Week 9
 
 - [Incident-Response-and-Disaster-Recovery](Incident-Response-and-Disaster-Recovery.pdf)
+
+## Week 10
+
+- [ghidra in class activity](../In_Class_Activity_Files/)
