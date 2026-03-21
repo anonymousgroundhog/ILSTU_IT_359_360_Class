@@ -28,22 +28,46 @@ Static analysis of Android APKs using the [Soot](https://soot-oss.github.io/soot
 
 ### Android SDK platforms
 
-Soot needs the `android.jar` for your target API level. The easiest way to get it:
+Soot needs the `android.jar` for your target API level.
+
+> **Note:** `sudo apt install android-sdk` installs the SDK tools but does **not** include any platform JARs. You must install platforms separately using `sdkmanager` as shown below.
 
 ```bash
-# Option A – install via apt (includes android-23)
+# 1. Install the base SDK tools
 sudo apt install android-sdk
 
-# Option B – minimal install (download just one platform)
-mkdir -p ~/android-sdk/platforms
-cd ~/android-sdk/platforms
-wget https://dl.google.com/android/repository/platform-33_r02.zip
-unzip platform-33_r02.zip
+# 2. Add sdkmanager to your PATH
+export PATH="$PATH:/usr/lib/android-sdk/tools/bin"
+
+# 3. Install the platform(s) you need (API 33 shown; adjust as needed)
+sdkmanager "platforms;android-33"
+
+# 4. Accept the license if prompted
+sdkmanager --licenses
+```
+
+If `sdkmanager` is not available after the apt install, install it via the command-line tools package:
+
+```bash
+# Download the latest command-line tools
+mkdir -p ~/android-sdk/cmdline-tools
+cd ~/android-sdk/cmdline-tools
+wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+unzip commandlinetools-linux-11076708_latest.zip
+mv cmdline-tools latest
+
+# Install a platform
+~/android-sdk/cmdline-tools/latest/bin/sdkmanager "platforms;android-33"
 ```
 
 Then set `ANDROID_HOME`:
 ```bash
 export ANDROID_HOME=~/android-sdk          # or /usr/lib/android-sdk
+```
+
+Verify that the platform JAR exists before running the analyzer:
+```bash
+ls $ANDROID_HOME/platforms/android-33/android.jar
 ```
 
 ---

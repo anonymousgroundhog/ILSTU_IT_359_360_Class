@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(chmod +x /home/sean/Documents/Projects/ILSTU_IT_359_360_Class/In_Class_Activity_Files/ghidra/setup.sh)"
+      "Bash(chmod +x /home/sean/Documents/Projects/ILSTU_IT_359_360_Class/In_Class_Activity_Files/ghidra/setup.sh)",
+      "Bash(claude --resume d8f0184c-42e6-4a4d-b404-481f2b2a1dad)"
     ]
   }
 }
