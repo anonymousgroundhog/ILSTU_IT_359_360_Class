@@ -167,9 +167,10 @@ def open_output(output_dir: Path):
 def print_report_summary(output_dir: Path):
     """Print a quick summary of the generated report files."""
     reports = {
-        "sensitive_apis.txt":   "Sensitive API calls",
-        "string_constants.txt": "Extracted string constants",
-        "class_method_map.txt": "Class/method map",
+        "sensitive_apis.txt":        "Sensitive API calls",
+        "sensitive_apis_jimple.txt": "Jimple code for sensitive APIs",
+        "string_constants.txt":      "Extracted string constants",
+        "class_method_map.txt":      "Class/method map",
     }
     print("\n=== REPORT SUMMARY ===")
     for filename, label in reports.items():

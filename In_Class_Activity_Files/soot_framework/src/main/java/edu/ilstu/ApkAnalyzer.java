@@ -163,6 +163,9 @@ public class ApkAnalyzer {
     // Core analysis
     // -----------------------------------------------------------------------
     public void analyze(String outputDir) throws IOException {
+        // Write out Jimple IR for all classes
+        new File(outputDir + "/jimple").mkdirs();
+
         Chain<SootClass> classes = Scene.v().getApplicationClasses();
 
         System.out.printf("[*] Application classes found: %d%n%n", classes.size());
@@ -171,6 +174,7 @@ public class ApkAnalyzer {
         List<String> classReport       = new ArrayList<>();
         List<String> sensitiveFindings = new ArrayList<>();
         List<String> stringFindings    = new ArrayList<>();
+        List<String> jimpleOutput      = new ArrayList<>();
 
         int methodCount = 0;
 
@@ -194,6 +198,8 @@ public class ApkAnalyzer {
                     continue;
                 }
 
+                boolean hasSensitiveApi = false;
+
                 // Scan each statement
                 for (Unit unit : body.getUnits()) {
                     Stmt stmt = (Stmt) unit;
@@ -204,6 +210,7 @@ public class ApkAnalyzer {
                         String sig = invoke.getMethod().getSignature();
                         String desc = SENSITIVE_APIS.get(sig);
                         if (desc != null) {
+                            hasSensitiveApi = true;
                             sensitiveFindings.add(String.format(
                                     "[%s]%n  Method : %s%n  Stmt   : %s%n  Note   : %s",
                                     sc.getName(), sm.getSignature(), stmt, desc));
@@ -223,6 +230,20 @@ public class ApkAnalyzer {
                         }
                     }
                 }
+
+                // --- Extract Jimple code for sensitive methods ---
+                if (hasSensitiveApi) {
+                    jimpleOutput.add("================================================================================");
+                    jimpleOutput.add("CLASS: " + sc.getName());
+                    jimpleOutput.add("METHOD: " + sm.getSignature());
+                    jimpleOutput.add("================================================================================");
+                    jimpleOutput.add("");
+                    // Add Jimple body
+                    for (Unit unit : body.getUnits()) {
+                        jimpleOutput.add("    " + unit.toString());
+                    }
+                    jimpleOutput.add("");
+                }
             }
         }
 
@@ -230,10 +251,42 @@ public class ApkAnalyzer {
         System.out.printf("[*] Sensitive API hits    : %d%n", sensitiveFindings.size());
         System.out.printf("[*] String constants found: %d%n%n", stringFindings.size());
 
+        // --- Write Jimple IR files for all classes ---
+        int jimpleCount = 0;
+        for (SootClass sc : classes) {
+            if (sc.isPhantom()) continue;
+            try {
+                String className = sc.getName();
+                String filepath = outputDir + "/jimple/" + className.replace(".", "/") + ".jimple";
+                new File(filepath).getParentFile().mkdirs();
+
+                try (PrintWriter pw = new PrintWriter(new FileWriter(filepath))) {
+                    for (SootMethod sm : sc.getMethods()) {
+                        if (!sm.isConcrete()) continue;
+                        try {
+                            Body body = sm.retrieveActiveBody();
+                            pw.println("// ===== Method: " + sm.getSignature() + " =====");
+                            for (Unit unit : body.getUnits()) {
+                                pw.println(unit.toString());
+                            }
+                            pw.println();
+                        } catch (Exception e) {
+                            pw.println("// (could not retrieve body for " + sm.getSignature() + ")");
+                        }
+                    }
+                }
+                jimpleCount++;
+            } catch (Exception e) {
+                System.err.println("[!] Error writing Jimple for " + sc.getName() + ": " + e.getMessage());
+            }
+        }
+        System.out.printf("[*] Jimple files written: %d%n%n", jimpleCount);
+
         // Write reports
         writeReport(outputDir + "/class_method_map.txt",     classReport,       "CLASS / METHOD MAP");
         writeReport(outputDir + "/sensitive_apis.txt",       sensitiveFindings, "SENSITIVE API CALLS");
         writeReport(outputDir + "/string_constants.txt",     stringFindings,    "STRING CONSTANTS");
+        writeReport(outputDir + "/sensitive_apis_jimple.txt", jimpleOutput,      "JIMPLE CODE FOR SENSITIVE API CALLS");
 
         // Print sensitive findings to console for quick triage
         if (!sensitiveFindings.isEmpty()) {
@@ -247,6 +300,7 @@ public class ApkAnalyzer {
         System.out.println("    - class_method_map.txt");
         System.out.println("    - sensitive_apis.txt");
         System.out.println("    - string_constants.txt");
+        System.out.println("    - sensitive_apis_jimple.txt  (Jimple IR with sensitive APIs)");
         System.out.println("    - jimple/  (Jimple IR for each class)");
     }
 
