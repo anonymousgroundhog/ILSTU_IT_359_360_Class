@@ -2,7 +2,37 @@
   "permissions": {
     "allow": [
       "Bash(chmod +x /home/sean/Documents/Projects/ILSTU_IT_359_360_Class/In_Class_Activity_Files/ghidra/setup.sh)",
-      "Bash(claude --resume d8f0184c-42e6-4a4d-b404-481f2b2a1dad)"
+      "Bash(claude --resume d8f0184c-42e6-4a4d-b404-481f2b2a1dad)",
+      "Bash(pip3 list:*)",
+      "Bash(python3:*)",
+      "Bash(pip3 show:*)",
+      "Bash(ruff check:*)",
+      "Bash(ruff format:*)",
+      "Bash(pkill -f \"python3 main.py\")",
+      "Bash(wait)",
+      "Bash(find . -name \"*.py\" -type f -exec sed -i 's/font=theme\\\\.FONT_TITLE,/# font uses default,/g' {} \\\\;)",
+      "Bash(find . -name \"*.py\" -type f -exec sed -i 's/font=theme\\\\.FONT_SUBTITLE,/# font uses default,/g' {} \\\\;)",
+      "Bash(find . -name \"*.py\" -type f -exec sed -i 's/font=theme\\\\.FONT_HEADING,/# font uses default,/g' {} \\\\;)",
+      "Bash(find . -name \"*.py\" -type f -exec sed -i 's/font=theme\\\\.FONT_BODY,/# font uses default,/g' {} \\\\;)",
+      "Bash(find . -name \"*.py\" -type f -exec sed -i 's/font=theme\\\\.FONT_SMALL,/# font uses default,/g' {} \\\\;)",
+      "Bash(npm --version)",
+      "Bash(npm install:*)",
+      "Bash(timeout 5 node server.js)",
+      "Bash(killall -9 node)",
+      "Bash(timeout 3 node server.js)",
+      "Bash(sudo lsof:*)",
+      "Bash(sudo netstat:*)",
+      "Bash(PORT=3001 timeout 2 node server.js)",
+      "Bash(find public/js -name '*.js' -exec wc -l {} +)",
+      "Bash(echo \"   • Frontend code: $\\(find public/js -name '*.js' -exec wc -l {} +)",
+      "Bash(rm:*)",
+      "Bash(PORT=3007 timeout 3 npm start)",
+      "Bash(killall -9 node npm)",
+      "Bash(npm start:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(netstat -tlnp)",
+      "Bash(PORT=3001 npm start)",
+      "Bash(curl -s http://localhost:3001)"
     ]
   }
 }
