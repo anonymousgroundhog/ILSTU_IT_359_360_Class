@@ -1,0 +1,17 @@
+{
+  "name": "ir-dr-plan-builder",
+  "version": "1.0.0",
+  "description": "Professional IR/DR Plan Builder - Web-based wizard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["incident-response", "disaster-recovery"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pdfkit": "^0.15.0"
+  }
+}

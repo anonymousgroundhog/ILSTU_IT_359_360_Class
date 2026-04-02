@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IR/DR Plan Builder</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Plan Steps</h1>
+      </div>
+
+      <nav class="step-nav">
+        <button class="step-button active" data-step="0">0. Welcome</button>
+        <button class="step-button" data-step="1">1. Organization</button>
+        <button class="step-button" data-step="2">2. IR Team</button>
+        <button class="step-button" data-step="3">3. IR Plan</button>
+        <button class="step-button" data-step="4">4. DR Plan</button>
+        <button class="step-button" data-step="5">5. Review</button>
+      </nav>
+
+      <div class="sidebar-actions">
+        <button class="action-button" id="save-btn">Save Plan</button>
+        <button class="action-button green" id="load-btn">Load Plan</button>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-label">Progress</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="pages-container">
+
+        <!-- Step 0: Welcome -->
+        <section id="page-0" class="active">
+          <div class="welcome-container">
+            <div class="welcome-icon">🛡️</div>
+            <h1>IR/DR Plan Builder</h1>
+            <p>Create a professional Incident Response and Disaster Recovery plan from scratch in just 6 steps.</p>
+            <p>This wizard will guide you through:</p>
+            <ul style="margin-left: 20px; color: var(--text-muted);">
+              <li>Organization information and critical systems</li>
+              <li>Building your incident response team</li>
+              <li>Defining 5-stage incident response procedures</li>
+              <li>Defining 4-stage disaster recovery procedures</li>
+              <li>Setting RTO/RPO recovery objectives</li>
+              <li>Exporting as Markdown or PDF</li>
+            </ul>
+            <div class="welcome-buttons">
+              <button class="btn-primary" id="start-btn">Start New Plan</button>
+              <button class="btn-secondary" id="load-file-btn">Load Existing Plan</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 1: Organization Info -->
+        <section id="page-1">
+          <h1>Step 1: Organization Information</h1>
+          <form id="org-form">
+            <div class="form-group">
+              <label for="org-name">Organization Name</label>
+              <input type="text" id="org-name" placeholder="e.g., Acme Corporation">
+            </div>
+
+            <div class="form-group">
+              <label for="industry">Industry</label>
+              <select id="industry">
+                <option value="">Select an industry...</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Finance">Finance</option>
+                <option value="Education">Education</option>
+                <option value="Government">Government</option>
+                <option value="Technology">Technology</option>
+                <option value="Retail">Retail</option>
+                <option value="Manufacturing">Manufacturing</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="critical-systems">Critical Systems (one per line)</label>
+              <textarea id="critical-systems" placeholder="Database Server&#10;Email System&#10;Web Application"></textarea>
+              <button type="button" id="add-systems-btn" class="btn-secondary" style="margin-top: 10px;">Add Systems from Text</button>
+            </div>
+
+            <div class="form-group">
+              <label>Added Systems:</label>
+              <div id="systems-list" class="systems-list"></div>
+            </div>
+
+            <div class="nav-buttons">
+              <button type="button" class="btn-secondary" disabled style="visibility: hidden;">← Previous</button>
+              <button type="button" class="btn-primary next-page-btn" data-next="2">Next →</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Step 2: IR Team -->
+        <section id="page-2">
+          <h1>Step 2: Incident Response Team</h1>
+          <p>Add team members who will be responsible for incident response.</p>
+
+          <h3>Add Team Member</h3>
+          <form id="team-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="team-name">Name</label>
+                <input type="text" id="team-name" placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="team-role">Role</label>
+                <input type="text" id="team-role" placeholder="Security Analyst">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="team-phone">Phone</label>
+                <input type="tel" id="team-phone" placeholder="555-0123">
+              </div>
+              <div class="form-group">
+                <label for="team-email">Email</label>
+                <input type="email" id="team-email" placeholder="john@acme.com">
+              </div>
+            </div>
+
+            <button type="button" id="add-member-btn" class="btn-secondary">+ Add Member</button>
+          </form>
+
+          <h3 style="margin-top: 30px;">Team Members</h3>
+          <table class="team-table" id="team-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="team-tbody">
+            </tbody>
+          </table>
+
+          <div class="nav-buttons">
+            <button type="button" class="btn-secondary prev-page-btn" data-prev="1">← Previous</button>
+            <button type="button" class="btn-primary next-page-btn" data-next="3">Next →</button>
+          </div>
+        </section>
+
+        <!-- Step 3: IR Plan -->
+        <section id="page-3">
+          <h1>Step 3: Incident Response Plan</h1>
+          <p>Define your IR plan with 5 stages: Preparation, Detection & Analysis, Containment, Eradication, and Recovery.</p>
+
+          <div class="tabs" id="ir-tabs"></div>
+          <div id="ir-content"></div>
+
+          <div class="nav-buttons">
+            <button type="button" class="btn-secondary prev-page-btn" data-prev="2">← Previous</button>
+            <button type="button" class="btn-primary next-page-btn" data-next="4">Next →</button>
+          </div>
+        </section>
+
+        <!-- Step 4: DR Plan -->
+        <section id="page-4">
+          <h1>Step 4: Disaster Recovery Plan</h1>
+          <p>Define your DR plan with 4 stages: Prevention, Detection, Recovery, and Post-Recovery.</p>
+
+          <div class="tabs" id="dr-tabs"></div>
+          <div id="dr-content"></div>
+
+          <h3 style="margin-top: 30px;">Recovery Objectives</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rto">Recovery Time Objective (RTO)</label>
+              <input type="text" id="rto" placeholder="e.g., 4 hours">
+            </div>
+            <div class="form-group">
+              <label for="rpo">Recovery Point Objective (RPO)</label>
+              <input type="text" id="rpo" placeholder="e.g., 1 hour">
+            </div>
+          </div>
+
+          <div class="nav-buttons">
+            <button type="button" class="btn-secondary prev-page-btn" data-prev="3">← Previous</button>
+            <button type="button" class="btn-primary next-page-btn" data-next="5">Next →</button>
+          </div>
+        </section>
+
+        <!-- Step 5: Review -->
+        <section id="page-5">
+          <h1>Step 5: Review & Export</h1>
+
+          <div class="completeness-bar">
+            <div class="bar">
+              <div class="fill" id="completeness-fill" style="width: 0%"></div>
+            </div>
+            <div class="text" id="completeness-text">0% complete</div>
+          </div>
+
+          <h3>Plan Preview</h3>
+          <div class="preview-box" id="preview-content"></div>
+
+          <div style="display: flex; gap: 15px; margin-top: 30px;">
+            <button class="btn-primary" id="export-md-btn" style="flex: 1;">📄 Export Markdown</button>
+            <button class="btn-success" id="export-pdf-btn" style="flex: 1;">📕 Export PDF</button>
+          </div>
+
+          <div class="nav-buttons">
+            <button type="button" class="btn-secondary prev-page-btn" data-prev="4">← Previous</button>
+            <button type="button" class="btn-primary" disabled style="visibility: hidden;">Next →</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- File input for loading (hidden) -->
+  <input type="file" id="file-input" accept=".json" style="display: none;">
+
+  <script src="/js/models.js"></script>
+  <script src="/js/pages/welcome.js"></script>
+  <script src="/js/pages/org-info.js"></script>
+  <script src="/js/pages/ir-team.js"></script>
+  <script src="/js/pages/ir-plan.js"></script>
+  <script src="/js/pages/dr-plan.js"></script>
+  <script src="/js/pages/review.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
