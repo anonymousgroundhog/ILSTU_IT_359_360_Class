@@ -120,6 +120,21 @@ document.getElementById("load-btn").addEventListener("click", () => {
   document.getElementById("file-input").click();
 });
 
+// Help menu
+document.getElementById("help-btn").addEventListener("click", () => {
+  document.getElementById("help-modal").classList.add("active");
+});
+
+document.getElementById("help-close-btn").addEventListener("click", () => {
+  document.getElementById("help-modal").classList.remove("active");
+});
+
+document.getElementById("help-modal").addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.classList.remove("active");
+  }
+});
+
 // File input handler
 document.getElementById("file-input").addEventListener("change", async (e) => {
   const file = e.target.files[0];

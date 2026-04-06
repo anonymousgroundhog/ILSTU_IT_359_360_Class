@@ -13,6 +13,7 @@
     <aside class="sidebar">
       <div class="sidebar-header">
         <h1>Plan Steps</h1>
+        <button class="btn-help" id="help-btn" title="Methodology Help">?</button>
       </div>
 
       <nav class="step-nav">
@@ -276,6 +277,58 @@
           </div>
         </section>
 
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Modal -->
+  <div class="modal" id="help-modal">
+    <div class="modal-content" style="max-width: 700px;">
+      <div class="modal-header">
+        <h2>IR/DR Plan Methodology</h2>
+      </div>
+      <div class="modal-body" style="overflow-y: auto; max-height: 60vh; line-height: 1.7;">
+        <!-- IR section -->
+        <h3>Incident Response (NIST SP 800-61)</h3>
+        <p>Incident response is the organized approach to addressing and managing a security breach or attack. The NIST framework defines 5 phases:</p>
+        <ol>
+          <li><strong>Preparation</strong> — Establish policies, assemble the IR team, deploy detection tools, and train staff before an incident occurs.</li>
+          <li><strong>Detection &amp; Analysis</strong> — Identify indicators of compromise (IOCs), scope the incident, and prioritize based on impact.</li>
+          <li><strong>Containment</strong> — Isolate affected systems to stop the spread. Short-term containment preserves forensic evidence; long-term containment restores a clean state.</li>
+          <li><strong>Eradication</strong> — Remove malware, close attack vectors, patch vulnerabilities, and eliminate the root cause.</li>
+          <li><strong>Recovery</strong> — Restore affected systems to normal operations, monitor for recurrence, and verify integrity.</li>
+          <li><strong>Post-Incident Review</strong> — Document lessons learned, update the IR plan, and improve defenses based on findings.</li>
+        </ol>
+
+        <!-- DR section -->
+        <h3 style="margin-top: 20px;">Disaster Recovery Methodology</h3>
+        <p>Disaster recovery focuses on restoring IT systems and data after a disruptive event (natural disaster, ransomware, hardware failure). Key phases:</p>
+        <ol>
+          <li><strong>Prevention</strong> — Reduce risk through redundancy, off-site backups, power protection, and documented continuity procedures.</li>
+          <li><strong>Detection</strong> — Automated monitoring and alerting to identify outages, data loss, or degraded service as early as possible.</li>
+          <li><strong>Recovery</strong> — Execute the recovery runbook: restore from backup, activate failover systems, and communicate status to stakeholders.</li>
+          <li><strong>Post-Recovery</strong> — Validate restored systems, document the event, update the DR plan, and conduct a retrospective.</li>
+        </ol>
+
+        <!-- RTO / RPO -->
+        <h3 style="margin-top: 20px;">Key Recovery Metrics</h3>
+        <ul>
+          <li><strong>RTO (Recovery Time Objective)</strong> — The maximum acceptable length of time a system can be offline after an incident. Example: "4 hours."</li>
+          <li><strong>RPO (Recovery Point Objective)</strong> — The maximum acceptable amount of data loss measured in time. Example: "1 hour" means backups must be no older than 1 hour.</li>
+        </ul>
+
+        <!-- Team roles -->
+        <h3 style="margin-top: 20px;">IR Team Roles</h3>
+        <ul>
+          <li><strong>Incident Commander</strong> — Leads the response, makes escalation decisions.</li>
+          <li><strong>Security Analyst</strong> — Investigates alerts, performs triage and forensics.</li>
+          <li><strong>System Administrator</strong> — Executes containment and recovery actions on affected systems.</li>
+          <li><strong>Communications Lead</strong> — Manages notifications to stakeholders, legal, and regulators.</li>
+          <li><strong>Legal / Compliance</strong> — Advises on reporting obligations and evidence preservation.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" id="help-close-btn">Close</button>
       </div>
     </div>
   </div>
