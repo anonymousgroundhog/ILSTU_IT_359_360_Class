@@ -115,6 +115,10 @@ function makeDefaultPlan() {
     dr_stages: JSON.parse(JSON.stringify(DR_STAGES)), // Deep copy
     rto: "",
     rpo: "",
+    ai_scenarios: {
+      tabletop: "",
+      simulation: "",
+    },
   };
 }
 

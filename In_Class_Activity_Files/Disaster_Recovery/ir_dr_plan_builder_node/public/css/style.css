@@ -621,6 +621,184 @@ button {
   background-color: var(--text-muted);
 }
 
+/* Markdown Output */
+.markdown-output {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  overflow-y: auto;
+  max-height: 500px;
+  min-height: 200px;
+}
+
+.markdown-output:empty::before {
+  content: attr(placeholder);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Markdown Typography */
+.markdown-output h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 24px 0 16px 0;
+  color: var(--accent);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.markdown-output h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 12px 0;
+  color: var(--accent);
+}
+
+.markdown-output h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0 10px 0;
+  color: var(--accent-green);
+}
+
+.markdown-output h4,
+.markdown-output h5,
+.markdown-output h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0 8px 0;
+  color: var(--text-primary);
+}
+
+.markdown-output p {
+  margin: 12px 0;
+  color: var(--text-primary);
+}
+
+.markdown-output strong {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.markdown-output em {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.markdown-output ul,
+.markdown-output ol {
+  margin: 12px 0;
+  padding-left: 28px;
+}
+
+.markdown-output li {
+  margin: 6px 0;
+  color: var(--text-primary);
+}
+
+.markdown-output li strong {
+  color: var(--accent);
+}
+
+/* Code */
+.markdown-output code {
+  background-color: rgba(137, 180, 250, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.markdown-output pre {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 12px;
+  margin: 12px 0;
+  overflow-x: auto;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 13px;
+}
+
+.markdown-output pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-primary);
+}
+
+/* Blockquote */
+.markdown-output blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  margin: 12px 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Links */
+.markdown-output a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+  transition: all 0.2s;
+}
+
+.markdown-output a:hover {
+  background-color: rgba(137, 180, 250, 0.1);
+  border-bottom-color: #a8c8f9;
+}
+
+/* Tables */
+.markdown-output table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  background-color: var(--bg-primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.markdown-output table thead {
+  background-color: rgba(137, 180, 250, 0.15);
+}
+
+.markdown-output table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--accent);
+  border-bottom: 2px solid var(--border);
+  font-size: 13px;
+}
+
+.markdown-output table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.markdown-output table tbody tr:hover {
+  background-color: rgba(137, 180, 250, 0.05);
+}
+
+.markdown-output table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Horizontal rule */
+.markdown-output hr {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 20px 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {

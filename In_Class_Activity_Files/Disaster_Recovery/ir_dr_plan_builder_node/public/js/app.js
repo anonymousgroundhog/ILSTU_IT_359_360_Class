@@ -10,6 +10,7 @@ const pages = [
   IRPlanPage,
   DRPlanPage,
   ReviewPage,
+  AIScenarioPage,
 ];
 
 let currentPageIdx = 0;

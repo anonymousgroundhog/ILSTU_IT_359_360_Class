@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IR/DR Plan Builder</title>
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
   <div id="app">
@@ -21,6 +22,7 @@
         <button class="step-button" data-step="3">3. IR Plan</button>
         <button class="step-button" data-step="4">4. DR Plan</button>
         <button class="step-button" data-step="5">5. Review</button>
+        <button class="step-button" data-step="6">6. AI Scenarios</button>
       </nav>
 
       <div class="sidebar-actions">
@@ -218,6 +220,58 @@
 
           <div class="nav-buttons">
             <button type="button" class="btn-secondary prev-page-btn" data-prev="4">← Previous</button>
+            <button type="button" class="btn-primary next-page-btn" data-next="6">Next →</button>
+          </div>
+        </section>
+
+        <!-- Step 6: AI Scenarios -->
+        <section id="page-6">
+          <h1>Step 6: AI Test Scenario Generator</h1>
+          <p>Connect to your local OpenWebUI server to generate test scenarios based on your plan.</p>
+
+          <div style="background-color: var(--bg-surface); padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+            <p style="margin: 0; font-size: 13px; color: var(--text-muted);">
+              <strong>ISU Ollama Server:</strong> Use <code>http://sushi.it.ilstu.edu:8080</code> for the URL.
+              You need a valid API key from Dr. Sanders. Trouble connecting? Run <code>node test-connection.js</code> to diagnose.
+            </p>
+          </div>
+
+          <h3>OpenWebUI Connection</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ai-server-url">Server URL</label>
+              <input type="text" id="ai-server-url" placeholder="e.g., http://localhost:3000">
+            </div>
+            <div class="form-group">
+              <label for="ai-api-key">API Key</label>
+              <input type="password" id="ai-api-key" placeholder="Enter your API key">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="button" id="ai-fetch-models-btn" class="btn-secondary">Fetch Models</button>
+            <span id="ai-status" style="margin-left: 15px; color: var(--text-muted);"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="ai-model-select">Select Model</label>
+            <select id="ai-model-select">
+              <option value="">-- No models available --</option>
+            </select>
+          </div>
+
+          <h3 style="margin-top: 30px;">Tabletop Exercise Scenario</h3>
+          <button type="button" id="ai-gen-tabletop-btn" class="btn-secondary">Generate Tabletop Exercise</button>
+          <div id="ai-tabletop-output" class="markdown-output" placeholder="Generated tabletop exercise scenario will appear here..." style="margin-top: 10px;"></div>
+          <textarea id="ai-tabletop-raw" style="display: none;"></textarea>
+
+          <h3 style="margin-top: 30px;">Incident Simulation Scenario</h3>
+          <button type="button" id="ai-gen-sim-btn" class="btn-secondary">Generate Incident Simulation</button>
+          <div id="ai-sim-output" class="markdown-output" placeholder="Generated incident simulation scenario will appear here..." style="margin-top: 10px;"></div>
+          <textarea id="ai-sim-raw" style="display: none;"></textarea>
+
+          <div class="nav-buttons">
+            <button type="button" class="btn-secondary prev-page-btn" data-prev="5">← Previous</button>
             <button type="button" class="btn-primary" disabled style="visibility: hidden;">Next →</button>
           </div>
         </section>
@@ -236,6 +290,7 @@
   <script src="/js/pages/ir-plan.js"></script>
   <script src="/js/pages/dr-plan.js"></script>
   <script src="/js/pages/review.js"></script>
+  <script src="/js/pages/ai-scenario.js"></script>
   <script src="/js/app.js"></script>
 </body>
 </html>
