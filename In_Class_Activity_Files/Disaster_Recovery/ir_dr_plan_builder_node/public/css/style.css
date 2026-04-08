@@ -313,6 +313,25 @@ button {
   border-color: var(--accent);
 }
 
+.copy-btn-wrapper {
+  margin-top: 12px;
+  display: block;
+}
+
+.btn-copy {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.btn-copy:hover {
+  background-color: rgba(137, 180, 250, 0.1);
+  border-color: var(--accent);
+}
+
 /* Form Group */
 .form-group {
   margin-bottom: 25px;
@@ -485,6 +504,25 @@ button {
   margin: 0;
   cursor: pointer;
   font-weight: normal;
+}
+
+.checklist-item .editable-label {
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+
+.checklist-item .editable-label:hover {
+  background-color: rgba(137, 180, 250, 0.1);
+}
+
+.checklist-item .edit-input {
+  flex: 1;
+  margin: 0;
+  font-weight: normal;
+  padding: 6px 8px !important;
+  border-color: var(--accent) !important;
 }
 
 .checklist-item button {

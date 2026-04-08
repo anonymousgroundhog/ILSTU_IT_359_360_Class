@@ -13,6 +13,9 @@ const OrgInfoPage = {
   onLeave() {
     window.planData.org_name = document.getElementById("org-name").value.trim();
     window.planData.industry = document.getElementById("industry").value;
+    window.planData.critical_systems = Array.from(
+      document.querySelectorAll(".system-chip")
+    ).map((chip) => chip.textContent.trim().replace(/×$/, "").trim());
   },
 
   refreshSystemsList() {

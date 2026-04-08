@@ -71,13 +71,37 @@ const IRPlanPage = {
         <input type="checkbox" id="ir-check-${stageIdx}-${itemIdx}" ${
         item.completed ? "checked" : ""
       }>
-        <label for="ir-check-${stageIdx}-${itemIdx}">${item.text}</label>
+        <label for="ir-check-${stageIdx}-${itemIdx}" class="editable-label" data-stage-idx="${stageIdx}" data-item-idx="${itemIdx}">${item.text}</label>
         <button type="button" class="delete-btn" data-stage-idx="${stageIdx}" data-item-idx="${itemIdx}">✕</button>
       `;
 
       const checkbox = div.querySelector("input");
       checkbox.addEventListener("change", () => {
         stage.checklist[itemIdx].completed = checkbox.checked;
+      });
+
+      const label = div.querySelector(".editable-label");
+      label.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const input = document.createElement("input");
+        input.type = "text";
+        input.value = item.text;
+        input.className = "edit-input";
+        label.replaceWith(input);
+        input.focus();
+        input.select();
+
+        const saveEdit = () => {
+          stage.checklist[itemIdx].text = input.value.trim() || "New item";
+          this.buildChecklist(stageIdx);
+        };
+
+        input.addEventListener("blur", saveEdit);
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") saveEdit();
+          if (e.key === "Escape") this.buildChecklist(stageIdx);
+        });
       });
 
       div.querySelector(".delete-btn").addEventListener("click", (e) => {

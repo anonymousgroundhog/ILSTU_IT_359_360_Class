@@ -62,9 +62,34 @@ const AIScenarioPage = {
     // Render markdown to HTML
     const html = marked.parse(markdown);
 
-    // Add custom class for styling
+    // Clear container and add markdown content
     container.innerHTML = html;
     container.classList.add("markdown-output");
+
+    // Find or create button wrapper
+    let wrapper = container.nextElementSibling;
+    if (!wrapper || wrapper.className !== "copy-btn-wrapper") {
+      wrapper = document.createElement("div");
+      wrapper.className = "copy-btn-wrapper";
+      container.parentNode.insertBefore(wrapper, container.nextSibling);
+    } else {
+      wrapper.innerHTML = "";
+    }
+
+    // Add copy button to wrapper
+    const copyBtn = document.createElement("button");
+    copyBtn.type = "button";
+    copyBtn.className = "btn-copy";
+    copyBtn.textContent = "📋 Copy to Clipboard";
+    copyBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(markdown).then(() => {
+        copyBtn.textContent = "✓ Copied!";
+        setTimeout(() => {
+          copyBtn.textContent = "📋 Copy to Clipboard";
+        }, 2000);
+      });
+    });
+    wrapper.appendChild(copyBtn);
   },
 
   setStatus(message, type = "info") {
