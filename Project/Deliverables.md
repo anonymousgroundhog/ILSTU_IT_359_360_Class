@@ -72,16 +72,16 @@ Note: You may include other folders like `data/` or `tests/` as needed.
 
 ---
 
-## Grading Rubric (100 Points Total)
+## Grading Rubric (150 Points Total)
 
 | Component | Criteria | Points |
 | --- | --- | --- |
-| **GitHub Repository** (40 Points) | **Functionality:** Program runs, is free of major bugs, and achieves goals. | 20 |
-|  | **Code Quality & Repo Structure:** Code is well-commented/organized; repo is well-structured. | 10 |
-|  | **README & Documentation:** Clear, comprehensive setup and usage instructions. | 10 |
-| **Final Writeup** (40 Points) | **Purpose & Introduction:** Problem and goals are clearly defined. | 10 |
-|  | **Technical Explanation:** Implementation explained with depth and accuracy. | 15 |
-|  | **Justification & Analysis:** Rationale demonstrates critical thinking. | 15 |
-| **Video Presentation** (20 Points) | **Clarity of Explanation:** Purpose, function, and results explained clearly. | 10 |
-|  | **Effectiveness of Demonstration:** Live demo successfully showcases capabilities. | 10 |
+| **GitHub Repository** (60 Points) | **Functionality:** Program runs, is free of major bugs, and achieves goals. | 30 |
+|  | **Code Quality & Repo Structure:** Code is well-commented/organized; repo is well-structured. | 15 |
+|  | **README & Documentation:** Clear, comprehensive setup and usage instructions. | 15 |
+| **Final Writeup** (60 Points) | **Purpose & Introduction:** Problem and goals are clearly defined. | 15 |
+|  | **Technical Explanation:** Implementation explained with depth and accuracy. | 23 |
+|  | **Justification & Analysis:** Rationale demonstrates critical thinking. | 22 |
+| **Video Presentation** (30 Points) | **Clarity of Explanation:** Purpose, function, and results explained clearly. | 15 |
+|  | **Effectiveness of Demonstration:** Live demo successfully showcases capabilities. | 15 |
 
