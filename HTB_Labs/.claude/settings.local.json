@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:purplesec.us)",
+      "WebSearch",
+      "WebFetch(domain:pdf4pro.com)"
+    ]
+  }
+}
